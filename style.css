@@ -1,0 +1,98 @@
+:root {
+    --btn-primary-color: #7a00cc;
+    --text-color: #ffff;
+    --padding: .8rem 1rem;
+    --btn-padding: .7rem 2rem;
+    --btn-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main {
+    padding: 1.5rem 3rem;
+    background: url(images/phone.jpg);
+    background-position: left;
+    background-size: cover;
+}
+a, h1, h2, h3, p {
+    color: var(--text-color);
+}
+a {
+   font-size: 1.1rem; 
+   padding: var(--padding);
+   margin: 0 .3rem;
+}
+img.icon {
+    width: 2.3rem;
+    margin-right: .5rem;
+}
+header .container, .logo, nav ul {
+    display: flex;
+}
+.logo {
+    justify-content: center;
+    align-items: center;
+}
+header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+}
+.link {
+    text-decoration: none;
+}
+.signup-link {
+    background: var(--btn-primary-color);
+    padding: var(--btn-padding);
+    border-radius: 1.5rem;
+    box-shadow: var(--btn-box-shadow);
+}
+
+/* styling the hero section */
+.hero-section .container {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+}
+.hero-div {
+    display: flex;
+    flex-direction: column;
+    align-self: auto;
+}
+.hero-div > * {
+    margin: .5rem 0;
+}
+.hero-div a, p {
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+.hero-div h1 {
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 4rem;
+}
+.subscribe {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.3);
+    padding: .7rem .8rem;
+    border-radius: 5rem;
+}
+.subscribe input {
+    background: none;
+    border: none;
+    outline: none;
+    padding: var(--padding);
+    color: #fff;
+    font-size: 1.1rem;
+}
+.hero-div .payments {
+    display: flex;
+}
